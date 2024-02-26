@@ -1,64 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Abdul Rahman Website</title>
-        <link rel="stylesheet" href="style.css">
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Abdul Rahman</h1>
-            <p class = 'personal_information'>Phone: 437-534-8546<br>Address: 47
-                Thorncliffe Park Drive</p>
-                <div class="link-table">
-                <div class="email_link">
-                <a href = "mailto: abdul.rahman@torontomu.ca">Email</a>
-                </div>
-                <div class="email_description">
-                <p>I can be reached at this email.</p>
-                </div>
-                </div>
-            <hr>
-        </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="displayUserName()">Submit</button>
+  <div id="output"></div>
 
-        <section>
-            <h2>Education</h2>
-            <h3>University</h3>
-            <p>Toronto Metropolitan University<br>
-               BS in Business Technology Management<br>
-               September 2022 - Present</p>
-            <p>Description: The program is a combination of technology, business and<br>
-               management where you gain a sound understanding of business <br>
-               principles and drive ICT-based innovation with skills honed through <br>
-               an optional co-op, case studies, and state-of-the-art classrooms and labs.</p>
-            <p>Most Useful Course: Data and Information Management</p>
-            <p>Why: This course enhanced my problem-solving skills and laid the foundation <br>
-               for understanding database management systems, which proved invaluable in both <br>
-               academic and professional endeavors.</p>
-            <h3>High School</h3>
-            <p>Marc Garneau Collegiate Institute<br>
-               Graduated: June 2022</p>
-            <hr>
-        </section>
+  <img id="myImage" src="haaland.jpg" onclick="enlargeImage()">
 
-
-        <section>
-            <h2>Educational Awards</h2>
-            <ul>
-                <li>Dean's List</li>
-            </ul>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Extra-curricular Activities</h2>
-            <ol>
-                <li>General Executive - Global Management Student Association</li>
-                <li>General Associate - Law & Business Student Association</li>
-            </ol>
-        </section>
-
-    </body>
+<nav>
+    <ul>
+      <li><a href="https://www.youtube.com/" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'">Youtube</a></li>
+      <li><a href="https://twitter.com/" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'">Twitter</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'">Gmail</a></li>
+      <li><a href="#" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'">Phone</a></li>
+      <li><a href="#" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'">Address</a></li>
+    </ul>
+  </nav>
+</body>
 </html>

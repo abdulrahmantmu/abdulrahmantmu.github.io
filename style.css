@@ -1,76 +1,28 @@
-body {
-font-family: Arial;
-font-size: 12px;
-color: maroon;
-background-color: grey;
-margin-top: 15px;
-margin-right: 12px;
-margin-left: 12px;
-margin-bottom: 15px;
+img {
+    width: 200px; /* Set initial size */
+    cursor: pointer;
+    padding-bottom: 50px;
+  }
+
+nav {
+    background-color: black;
+    width: 250px;
 }
 
-h1 {
-font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-color: rgb(50, 0, 0);
-}
-
-h2 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 24px;
-color: rgb(80, 0, 0);
-}
-
-h3 {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 16px;
-color: rgb(100, 0, 0)
-}
-
-.personal_information {
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 14px;
-color: darkred;
-}
-
-.school_information {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12px;
-color: rgb(190, 4, 4);
-}
-
-a:link {
-color: maroon;
-text-decoration: none;
-}
-a:visited {
-color: purple;
-text-decoration: none;
-}
-a:hover {
-color: hotpink;
-text-decoration: underline;
-}
-a:active {
-color: red;
-text-decoration: underline;
-}
-
-
-.link-table {
-display: grid;
-grid-template-columns: 50px 180px;
-}
-
-.email_link {
-align-content: center;
-padding-top: 12px;
-padding-left: 9px;
-border: 1px solid black;
-}
-
-.email_description {
-padding-left: 10px;
-border: 100px;
-border: 1px solid black;
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: blue; /* Change color on hover */
+    font-weight: bold; /* Add font weight on hover */
+  }
