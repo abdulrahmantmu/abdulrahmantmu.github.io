@@ -3,3 +3,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert('Thank you for your message!');
     // Implement further functionality like form validation or sending data to a server here
 });
+
+
