@@ -1,76 +1,133 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-font-family: Arial;
-font-size: 12px;
-color: maroon;
-background-color: grey;
-margin-top: 15px;
-margin-right: 12px;
-margin-left: 12px;
-margin-bottom: 15px;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-color: rgb(50, 0, 0);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-h2 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 24px;
-color: rgb(80, 0, 0);
+nav ul {
+    list-style-type: none;
 }
 
-h3 {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 16px;
-color: rgb(100, 0, 0)
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.personal_information {
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 14px;
-color: darkred;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.school_information {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12px;
-color: rgb(190, 4, 4);
+section {
+    padding: 20px;
+    margin: 20px 0;
 }
 
-a:link {
-color: maroon;
-text-decoration: none;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-a:visited {
-color: purple;
-text-decoration: none;
+
+.welcome_message {
+    font-size: 50px;
+    font-size: 	Copperplate;
+    padding-top: 0px;
+    padding-left: 150px;
 }
-a:hover {
-color: hotpink;
-text-decoration: underline;
+
+.welcome_description {
+    font-size: 15px;
+    width: 600px;
+    padding-left: 150px;
+    padding-top: 20px;
+    line-height: 30px;
+    font-family: Papyrus;
 }
-a:active {
-color: red;
-text-decoration: underline;
+
+.about_heading {
+    font-size: 30px;
+    font-family: Times New Roman;
+    padding-bottom: 15px;
+}
+
+.about_description {
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+
+.bullet_points {
+    width: 600px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+.data_analyst {
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+
+.contact_me {
+    font-size: 40px;
+    padding-left: 720px
 }
 
 
-.link-table {
-display: grid;
-grid-template-columns: 50px 180px;
+
+/* Add to the existing style.css */
+#contact-form input, #contact-form textarea {
+    display: block; /* Makes each input field and the textarea take up the full width of its parent container */
+    width: 90%; /* Adjusts the width to fit within the form, change as needed */
+    margin: 10px auto; /* Adds margin to the top and bottom, auto centers it horizontally */
+    padding: 10px; /* Adds some padding inside the fields for better text visibility */
 }
 
-.email_link {
-align-content: center;
-padding-top: 12px;
-padding-left: 9px;
-border: 1px solid black;
+#contact-form button {
+    display: block; /* Ensures the button is also a block-level element */
+    width: 94%; /* Adjust width as needed, considering padding */
+    padding: 10px; /* Adds padding for better visual appeal */
+    margin: 10px auto; /* Centers the button and adds margin like the other elements */
+    background-color: #007bff; /* Example button color, adjust as needed */
+    color: white; /* Adjust text color as needed */
+    border: none;
+    cursor: pointer; /* Changes the mouse cursor to indicate the button is clickable */
 }
 
-.email_description {
-padding-left: 10px;
-border: 100px;
-border: 1px solid black;
+#contact-form button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect, adjust as needed */
+}
+
+.content {
+    display: flex;
+    align-items: center; /* This will vertically center the items in the container */
+    justify-content: space-between; /* This adds space between the text and the image */
+}
+
+.text {
+    flex: 1; /* This allows the text container to grow and take up the remaining space */
+    padding-right: 20px; /* Add some space between the text and the image */
+}
+
+.image {
+    flex: 0 1 auto; /* This allows the image container to grow but also shrink if needed, without pushing the text out of its container */
+    max-width: 60%; /* Adjust this value based on your needs */
+    
+    
+   
 }
